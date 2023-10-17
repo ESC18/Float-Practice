@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #6E7E85;
+}
+
+header {
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.headerImg {
+    position: absolute;
+    width: 100%;
+    height : 25%;
+    object-fit:cover;
+    object-position: 20% 30%;
+} 
+
+.Title {
+    position: absolute;
+    font-size: 6.5vw;
+    color: rgba(0, 0, 0, 0.514);
+    font-family: 'Rubik Mono One';
+    top: 4vh;
+}
+
+.textBody {
+    position: absolute;
+    width: 50%;
+    height: 800%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1.textHeader {
+    font-family: 'Rubik Mono One';
+    margin-left: 50px;
+    border-bottom: #FFD700 solid 5px;
+    width: 60px;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Roboto Mono';
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.sideBar {
+    position: fixed;
+    top: 30%;
+    left: 14%;
+    transform: translate(-7%);
+    width: 150px;
+    height: 330px;
+    z-index: 300;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.anchor {
+    position: relative;
+    font-family: 'Roboto Mono';
+    font-size: 30px;
+    border-bottom: black 5px solid;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    top: 0px;
+    width: 100%;
+    height: 33px;
+}
+
+.anchor:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: #FFD700 5px solid;
+}
+
+.advertPanel {
+    position: fixed;
+    left: 80%;
+    top: 30%;
+    width: 370px;
+    height: 100%;
+}
+
+h1.albumHeader {
+    position: relative;
+    font-family: 'Rubik Mono One';
+}
+
+.newAlbum {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    z-index: 20;
+}
+
+.newAlbum:hover {
+    z-index: 1
+    ;
+    filter: blur(10%) brightness(50%);
+}
