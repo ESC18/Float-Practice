@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    z-index: 200;
+    z-index: 1;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -87,27 +87,33 @@ p {
 
 .advertPanel {
     position: fixed;
-    left: 80%;
+    left: 78.5%;
     top: 30%;
-    width: 370px;
-    height: 100%;
+    z-index: 300;
 }
 
 h1.albumHeader {
     position: relative;
     font-family: 'Rubik Mono One';
+    font-size: 28.35px;
 }
 
 .newAlbum {
     position: absolute;
-    width: 370px; 
-    height: 370px;
+    width: 300px; 
+    height: 300px;
     z-index: 20;
+    transition: all 0.2s;
+    border-right: black solid 7px;
+}
+
+.newAlbum2 {
+    top: 370px;
 }
 
 .newAlbum:hover {
     z-index: 1;
-    opacity: 50%;
+    filter: blur(3px) brightness(50%);
 }
 
 .View {
@@ -118,12 +124,26 @@ h1.albumHeader {
     font-family: 'Roboto Mono';
     font-size: 25px;
     background: white;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%);
-    margin-top: 160px;
+    margin-top: 130px;
     width: 100px;
     height: 40px;
     text-align: center;
     border-radius: 10px;
+}
 
+.View2 {
+    top: 380px;
+}
+
+.View:hover{
+    color: white;
+    background-color: black;
+    z-index: 300;
+}
+
+.View:hover .newAlbum {
+    z-index: 1;
+    filter: blur(3px) brightness(50%);
 }
