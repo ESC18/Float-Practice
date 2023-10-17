@@ -99,14 +99,31 @@ h1.albumHeader {
 }
 
 .newAlbum {
-    position: relative;
-    width: 350px;
-    height: 350px;
+    position: absolute;
+    width: 370px; 
+    height: 370px;
     z-index: 20;
 }
 
 .newAlbum:hover {
-    z-index: 1
-    ;
-    filter: blur(10%) brightness(50%);
+    z-index: 1;
+    opacity: 50%;
+}
+
+.View {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 25px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 160px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+
 }
